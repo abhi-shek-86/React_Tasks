@@ -1,7 +1,7 @@
 import "./Skills.css"
 import HtmlLogo from '../assets/html.png';
 import CssLogo from '../assets/Css.png';
-import javaScriptLogo from '../assets/js.png';
+import javaScriptLogo from '../assets/js.png'; // <-- Make sure this file exists!
 
 import FirebaseLogo from '../assets/firbase.png';
 import GitLogo from '../assets/Git_icon.svg.png';
