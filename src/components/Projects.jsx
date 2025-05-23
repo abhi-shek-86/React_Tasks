@@ -28,7 +28,7 @@ export function Projects() {
                 </div>
                 <div className="project">
                     <img src={MoneyImg} alt="Money Expenses Calculator" />
-                    <h3>Money Expenes Calculator</h3>
+                    <h3>Money Expense Calculator</h3>
                     <p>Developed a Money Expenses Calculator using HTML, CSS, JavaScript, and Firebase for data storage. Enabled users to track expenses with a clean, responsive interface and real-time updates.
 
 
