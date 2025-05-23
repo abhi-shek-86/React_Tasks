@@ -1,7 +1,8 @@
 import "./Skills.css"
 import HtmlLogo from '../assets/html.png';
 import CssLogo from '../assets/Css.png';
-import JsLogo from '../assets/javaScript-logo.png';
+import javaScriptLogo from '../assets/javaScript-logo.png';
+
 import FirebaseLogo from '../assets/firbase.png';
 import GitLogo from '../assets/Git_icon.svg.png';
 import ReactLogo from '../assets/react.png';
@@ -20,7 +21,7 @@ export function Skills() {
                     <h3>CSS</h3>
                 </div>
                 <div id="skill">
-                    <img src={JsLogo} alt="JavaScript" />
+                    <img src={javaScriptLogo} alt="JavaScript" />
                     <h3>JavaScript</h3>
                 </div>
                 <div id="skill">
