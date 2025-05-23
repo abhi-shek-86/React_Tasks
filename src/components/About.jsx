@@ -1,9 +1,10 @@
-
 import "./About.css"
+import Blazzer from '../assets/Blazzer.jpg';
+
 export function About(){
     return (
         <div id="about">
-            <img src="/src/assets/Blazzer.jpg" alt="" />
+            <img src={Blazzer} alt="Abhishek Vasamsetti" />
             <div id="about-text">
                 <h1>About Me</h1>
                 <p>

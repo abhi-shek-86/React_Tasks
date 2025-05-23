@@ -1,4 +1,10 @@
 import "./Skills.css"
+import HtmlLogo from '../assets/html.png';
+import CssLogo from '../assets/Css.png';
+import JsLogo from '../assets/javaScript-logo.png';
+import FirebaseLogo from '../assets/firbase.png';
+import GitLogo from '../assets/Git_icon.svg.png';
+import ReactLogo from '../assets/react.png';
 
 export function Skills() {
     return (
@@ -6,34 +12,30 @@ export function Skills() {
             <h1>Skills</h1>
             <div id="skills-container">
                 <div id="skill">
-                    <img src="src/assets/html.png" alt="" />
+                    <img src={HtmlLogo} alt="HTML" />
                     <h3>HTML</h3>
                 </div>
                 <div id="skill">
-                    <img src="src/assets/Css.png" alt="" />
+                    <img src={CssLogo} alt="CSS" />
                     <h3>CSS</h3>
-
                 </div>
                 <div id="skill">
-                    <img src="src/assets/javaScript-logo.png" alt="" />
+                    <img src={JsLogo} alt="JavaScript" />
                     <h3>JavaScript</h3>
                 </div>
                 <div id="skill">
-                    <img src="src/assets/firbase.png" alt="" />
+                    <img src={FirebaseLogo} alt="Firebase" />
                     <h3>Firebase</h3>
-                </div >
+                </div>
                 <div id="skill">
-                    <img src="src/assets/Git_icon.svg.png" alt="" />
+                    <img src={GitLogo} alt="Git & Github" />
                     <h3>Git & Github</h3>
                 </div>
                 <div id="skill">
-                    <img src="src/assets/react.png" alt="" />
+                    <img src={ReactLogo} alt="React" />
                     <h3>React</h3>
                 </div>
-
             </div>
-
-
         </div>
     )
 }
