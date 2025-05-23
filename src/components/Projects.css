@@ -1,0 +1,183 @@
+#projects > h1 {
+    text-align: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: #1a237e;
+    font-size: clamp(1.5rem, 4vw, 2.5rem);
+    margin-bottom: 2rem;
+}
+
+#projects {
+    margin-top: 5%;
+    padding: 0 1rem;
+}
+
+#projects-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    gap: 20px;
+    place-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.project > img {
+    width: 97%;
+    border-radius: 5px;
+    height: auto;
+    object-fit: cover;
+}
+
+.project {
+    width: 100%;
+    max-width: 370px;
+    min-height: 400px;
+    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.2);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 10px;
+    padding: 1rem;
+    box-sizing: border-box;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.project:hover {
+    transform: translateY(-5px);
+    box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.3);
+}
+
+.project > h3 {
+    font-size: clamp(1rem, 2.5vw, 1.2rem);
+    text-align: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: #1a237e;
+    margin: 1rem 0;
+    line-height: 1.4;
+}
+
+.project > p {
+    font-size: clamp(0.8rem, 2vw, 0.9rem);
+    width: 90%;
+    text-align: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    line-height: 1.5;
+    margin-bottom: 1rem;
+    flex-grow: 1;
+    display: flex;
+    align-items: center;
+}
+
+.project > #project-links {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    gap: 10px;
+    flex-wrap: wrap;
+    margin-top: auto;
+}
+
+#project-links > a {
+    margin-top: 5px;
+    text-decoration: none;
+    font-size: clamp(0.7rem, 1.8vw, 0.85rem);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background-color: white;
+    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.2);
+    padding: 10px 15px;
+    color: black;
+    border-radius: 7px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    white-space: nowrap;
+    flex: 1;
+    text-align: center;
+    min-width: 80px;
+}
+
+#project-links > a:hover {
+    background-color: #1a237e;
+    color: white;
+    transform: translateY(-2px);
+    box-shadow: 3px 5px 15px rgba(0, 0, 0, 0.3);
+}
+
+/* Media Queries for specific breakpoints */
+
+/* Mobile devices (portrait) */
+@media screen and (max-width: 480px) {
+    #projects {
+        margin-top: 3%;
+        padding: 0 0.5rem;
+    }
+    
+    #projects-container {
+        grid-template-columns: 1fr;
+        gap: 15px;
+        padding: 5px;
+    }
+    
+    .project {
+        max-width: 100%;
+        min-height: 350px;
+        padding: 0.8rem;
+    }
+    
+    .project > p {
+        width: 95%;
+    }
+    
+    #project-links > a {
+        padding: 8px 12px;
+        font-size: 0.75rem;
+    }
+}
+
+/* Mobile devices (landscape) and small tablets */
+@media screen and (min-width: 481px) and (max-width: 768px) {
+    #projects-container {
+        grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+        gap: 18px;
+    }
+    
+    .project {
+        max-width: 350px;
+    }
+}
+
+/* Tablets and small desktops */
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+    #projects-container {
+        grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+        gap: 20px;
+        max-width: 1000px;
+    }
+}
+
+/* Large screens */
+@media screen and (min-width: 1025px) {
+    #projects-container {
+        grid-template-columns: repeat(3, 1fr);
+        max-width: 1200px;
+    }
+    
+    .project {
+        max-width: 370px;
+    }
+}
+
+/* Extra large screens */
+@media screen and (min-width: 1400px) {
+    #projects-container {
+        max-width: 1400px;
+        gap: 25px;
+    }
+    
+    .project {
+        max-width: 400px;
+        min-height: 420px;
+    }
+}

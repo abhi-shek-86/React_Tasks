@@ -1,0 +1,228 @@
+#skills {
+    display: flex;
+    flex-direction: column;
+    margin-top: 5%;
+    padding: 0 1rem;
+}
+
+#skills > h1 {
+    text-align: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: #1a237e;
+    font-size: clamp(1.5rem, 4vw, 2.5rem);
+    margin-bottom: 2rem;
+}
+
+#skills-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    gap: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+    place-items: center;
+}
+
+#skill {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 10px;
+    width: 100%;
+    max-width: 200px;
+    height: auto;
+    min-height: 180px;
+    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.2);
+    border-radius: 12px;
+    padding: 1.5rem 1rem;
+    box-sizing: border-box;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    background-color: #fff;
+}
+
+#skill:hover {
+    transform: translateY(-8px) scale(1.02);
+    box-shadow: 5px 5px 25px rgba(0, 0, 0, 0.25);
+}
+
+#skill > img {
+    width: clamp(60px, 50%, 80px);
+    height: auto;
+    border-radius: 20%;
+    margin-bottom: 1rem;
+    transition: transform 0.3s ease;
+    object-fit: contain;
+}
+
+#skill:hover > img {
+    transform: scale(1.1);
+}
+
+#skill > h3 {
+    font-size: clamp(0.9rem, 2.5vw, 1.1rem);
+    text-align: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: #1a237e;
+    margin: 0;
+    line-height: 1.4;
+    font-weight: 600;
+}
+
+/* Media Queries for specific breakpoints */
+
+/* Extra small mobile devices */
+@media screen and (max-width: 320px) {
+    #skills {
+        padding: 0 0.5rem;
+        margin-top: 3%;
+    }
+    
+    #skills-container {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 10px;
+        padding: 5px;
+    }
+    
+    #skill {
+        max-width: 140px;
+        min-height: 140px;
+        padding: 1rem 0.5rem;
+        margin: 5px;
+    }
+    
+    #skill > img {
+        width: 40px;
+        margin-bottom: 0.5rem;
+    }
+    
+    #skill > h3 {
+        font-size: 0.8rem;
+    }
+}
+
+/* Small mobile devices */
+@media screen and (min-width: 321px) and (max-width: 480px) {
+    #skills-container {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 15px;
+    }
+    
+    #skill {
+        max-width: 160px;
+        min-height: 160px;
+        padding: 1.2rem 0.8rem;
+    }
+    
+    #skill > img {
+        width: 50px;
+    }
+}
+
+/* Mobile landscape and small tablets */
+@media screen and (min-width: 481px) and (max-width: 768px) {
+    #skills-container {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 18px;
+        max-width: 600px;
+    }
+    
+    #skill {
+        max-width: 180px;
+        min-height: 170px;
+    }
+    
+    #skill > img {
+        width: 60px;
+    }
+}
+
+/* Tablets */
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+    #skills-container {
+        grid-template-columns: repeat(4, 1fr);
+        gap: 20px;
+        max-width: 800px;
+    }
+    
+    #skill {
+        max-width: 180px;
+        min-height: 180px;
+    }
+}
+
+/* Small desktops */
+@media screen and (min-width: 1025px) and (max-width: 1200px) {
+    #skills-container {
+        grid-template-columns: repeat(5, 1fr);
+        gap: 20px;
+        max-width: 1000px;
+    }
+    
+    #skill {
+        max-width: 190px;
+        min-height: 190px;
+    }
+}
+
+/* Large desktops */
+@media screen and (min-width: 1201px) {
+    #skills-container {
+        grid-template-columns: repeat(6, 1fr);
+        gap: 25px;
+        max-width: 1200px;
+    }
+    
+    #skill {
+        max-width: 200px;
+        min-height: 200px;
+    }
+    
+    #skill > img {
+        width: 70px;
+    }
+}
+
+/* Extra large screens */
+@media screen and (min-width: 1400px) {
+    #skills-container {
+        max-width: 1400px;
+        gap: 30px;
+    }
+    
+    #skill {
+        max-width: 220px;
+        min-height: 220px;
+        padding: 2rem 1rem;
+    }
+    
+    #skill > img {
+        width: 80px;
+    }
+    
+    #skill > h3 {
+        font-size: 1.2rem;
+    }
+}
+
+/* Hover effects disabled on touch devices */
+@media (hover: none) and (pointer: coarse) {
+    #skill:hover {
+        transform: none;
+        box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.2);
+    }
+    
+    #skill:hover > img {
+        transform: none;
+    }
+}
+
+/* High resolution displays */
+@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+    #skill > img {
+        image-rendering: -webkit-optimize-contrast;
+        image-rendering: optimize-contrast;
+    }
+}
