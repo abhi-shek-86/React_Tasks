@@ -6,6 +6,8 @@ import javaScriptLogo from '../assets/js.png'; // <-- Make sure this file exists
 import FirebaseLogo from '../assets/firbase.png';
 import GitLogo from '../assets/Git_icon.svg.png';
 import ReactLogo from '../assets/react.png';
+import Python from '../assets/python.jpeg';
+import SQL from '../assets/sql.png';
 
 export function Skills() {
     return (
@@ -35,6 +37,14 @@ export function Skills() {
                 <div id="skill">
                     <img src={ReactLogo} alt="React" />
                     <h3>React</h3>
+                </div>
+                <div id="skill">
+                    <img src={Python} alt="React" />
+                    <h3>Python</h3>
+                </div>
+                <div id="skill">
+                    <img src={SQL} alt="React" />
+                    <h3>SQL</h3>
                 </div>
             </div>
         </div>
