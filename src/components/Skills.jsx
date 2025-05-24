@@ -1,13 +1,14 @@
 import "./Skills.css"
 import HtmlLogo from '../assets/html.png';
 import CssLogo from '../assets/Css.png';
-import javaScriptLogo from '../assets/js.png'; // <-- Make sure this file exists!
-
+import javaScriptLogo from '../assets/js.png';
 import FirebaseLogo from '../assets/firbase.png';
 import GitLogo from '../assets/Git_icon.svg.png';
 import ReactLogo from '../assets/react.png';
 import Python from '../assets/python.jpeg';
 import SQL from '../assets/sql.png';
+import NodeLogo from '../assets/nodejs.png';
+import MongoLogo from '../assets/mongodb.png';
 
 export function Skills() {
     return (
@@ -39,12 +40,20 @@ export function Skills() {
                     <h3>React</h3>
                 </div>
                 <div id="skill">
-                    <img src={Python} alt="React" />
+                    <img src={Python} alt="Python" />
                     <h3>Python</h3>
                 </div>
                 <div id="skill">
-                    <img src={SQL} alt="React" />
+                    <img src={SQL} alt="SQL" />
                     <h3>SQL</h3>
+                </div>
+                <div id="skill">
+                    <img src={NodeLogo} alt="Node.js" />
+                    <h3>Node.js</h3>
+                </div>
+                <div id="skill">
+                    <img src={MongoLogo} alt="MongoDB" />
+                    <h3>MongoDB</h3>
                 </div>
             </div>
         </div>
